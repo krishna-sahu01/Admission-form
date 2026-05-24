@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial,sans-serif;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url("loginbackgroundimage.jpeg") no-repeat center center;
+            background-size: cover;
+        }
+
+        #icon{
+           display: block;
+           text-align: center;
+           font-size: 60px;
+           margin: 10px auto;
+           color: rgb(26, 12, 213);
+           margin-bottom: 10px;
+          }
+
+        .container{
+            width: 400px;
+            background:white;
+            padding:30px;
+            border-radius:15px;
+            box-shadow:0 0 15px rgba(0,0,0,0.3);
+        }
+        
+        .container h1{
+            text-align: center;
+        }
+
+        p{
+            margin-bottom:25px;
+        }
+
+        input{
+            width: 100%;
+            padding: 12px;
+            margin-top: 16px;
+            font-size: 18px;
+            border-radius: 8px;
+            border: 1px solid gray;
+        }
+        input:focus,
+        select:focus{
+            outline: none;
+            border-color: rgb(58, 58, 240);
+            box-shadow:0 0 5px rgba(0,123,255,0.4);
+        }
+
+        button{
+            width: 100%;
+            padding: 12px;
+            font-size: 20px;
+            border-radius: 8px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: rgb(7, 91, 248);
+        }
+
+        p{
+            text-align: center;
+            margin-bottom:1px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <i class="fa-solid fa-circle-user" id="icon"></i>
+        <h1>Signup / Login</h1>
+        <p>Fill the details to continue</p>
+        <form action="index1.html">
+            <input type="text" placeholder="Enter Username" required>
+            <input type="email" placeholder="Enter Email" required>
+            <input type="password" placeholder="Enter Password" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p>Already have an account? <a href="#">Login </a></p>
+    </div>   
+</body>
+</html>
